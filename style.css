@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- Navbar----- */
+ .navbar{
+    padding: 10px;
+ }
+
+ .navbar ul li a{
+    color: rgb(182, 188, 186);
+ }
+
+ .navbar ul li a:hover{
+    color: rgb(187, 210, 37);
+ }
+/* ------- HEADER---------- */
+#header-one{
+    background-image: url('image/logo/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.title{
+    margin-top: 26%;
+}
+
+.title h1{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+}
+
+#header-one button{ padding-top: 15px; padding-bottom: 15px; padding-left: 25px; padding-right: 25px;
+    background: #FFC800; color: white; font-weight: 700; font-size: 20px; border: none;
+    border-radius: 5px;}
+/*  */
+
+.titre{
+    margin-top: 10%;
+}
+.titre h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgb(168, 176, 176);
+}
+
+.titre h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+.icon-item{
+    margin-left: 28%;
+}
+
+/* ---------------------------------
+         SECTION ABOUT
+--------------------------------- */
+/* #about{
+    padding-top: 96px; 
+    padding-bottom: 96px;
+} */
+
+#about .about-text h1{
+    font-size: 22px; 
+    font-weight: 700;
+}
+
+#about .about-text p{
+    font-size: 16px; 
+    color: rgb(150, 148, 148);
+}
+
+#about .about-box.box-start .about-img{ 
+    position: relative; width: 100%; 
+    right: -17%;
+}
+
+#about .about-box.box-end .about-img{ 
+    position: relative; 
+    width: 100%; left: -16%;
+}
+
+#about .about-box .about-img img{ 
+    width: 156px !important; 
+    height: 156px; 
+    border: 7px solid #e9ecef !important;
+}
+
+#about .box::before{ 
+    position: absolute; 
+    content: ""; 
+    top: 10%; 
+    width: 2px; 
+    height: 80%; 
+    left: 50%;
+    background: #e9ecef;
+}
+
+.last-circle{ 
+    background: #FFC800; 
+    font-size: 18px; 
+    width: 135px; 
+    height: 156px; 
+    color: #ffff;
+    font-weight: 600; 
+    z-index: 1; 
+    border: 7px solid #e9ecef !important; 
+    padding-top: 20px;
+}
+
+.box{ 
+    gap: 100px !important;
+}
+
+/* ---------------------------------
+         SECTION TEAM
+--------------------------------- */
+#team{ padding-top: 96px; padding-bottom: 96px;}
+#team h1{ font-size: 40px; font-weight: 700; margin-bottom: 16px; color: rgb(0, 0, 0);}
+#team span{ display: inline-block; font-size: 16px; margin-bottom: 64px; color: rgb(0, 0, 0);}
+#team .team-img img{ border: 7px solid #e9ecef; max-width: 224px; max-height: 224px;}
+#team .team-text h1{ font-size: 22px; font-weight: 700; margin-top: 20px;}
+#team .team-text p{ font-size: 16px; color: rgb(150, 148, 148); margin-bottom: 20px;}
+#team .team-logo .circle-logo .fa-brands{ font-size: 30px;}
+#team .team-items{ margin-bottom: 48px;}
+
+/* ---------------------------------
+         SECTION LOGO
+--------------------------------- */
+.img-1{ width: 206px; height: 44px;}
+.img-2{ height: 44px; width: 118px;}
+.img-3{ height: 44px; width: 163px;}
+.img-4{ height: 44px; width: 110px;}
+
+/* ---------------------------------
+         SECTION CONTACT
+--------------------------------- */
+#contact{ padding-top: 96px; padding-bottom: 96px; background-color: #212529;
+     background-image: url('pics/map-image.png'); background-position: center; background-size: cover;}
+#contact h1{ font-size: 40px; font-weight: 700; margin-bottom: 16px; color: white;}
+#contact span{ display: inline-block; font-size: 16px; margin-bottom: 64px; color: #6c757d;}
+#contact input, #contact textarea{ padding: 20px;}
+#contact input::placeholder, #contact textarea::placeholder{ color: #cfd0d1; font-weight: 700; font-size: 16px;}
+#contact input:focus, #contact textarea:focus{ border: 1px solid #FFC800; box-shadow: none;}
+#contact form button{ padding-top: 15px; padding-bottom: 15px; padding-left: 25px; padding-right: 25px;
+    background: #FFC800; color: white; font-weight: 700; font-size: 20px; border: none;
+    border-radius: 5px; opacity: 0.6;}
+
+/* ---------------------------------
+         SECTION FOOTER
+--------------------------------- */
+#footer .footer-logo .circle-logo .fa-brands{ font-size: 30px;}
+#footer p, #footer span{ color: #212529; font-size: 14.4px;}
+.fa-brands{ cursor: pointer;}
+#footer span{ cursor: pointer;}
+
+/*  SECTION ABOUT  */
+@media screen and (max-width:1180px) and (min-width:820px){
+    #about .box::before{ height: 90%;}
+}
+
+@media screen and (max-width:1200px) {
+    #about .about-box .about-img img{
+        width: 136px !important;
+        height: 136px;
+    }
+    .last-circle{
+        width: 136px !important;
+        height: 136px;
+    }   
+}
+
+@media screen and (max-width:991px) {
+    #about .about-box .about-img img{
+        width: 86px !important;
+        height: 86px;
+    }
+    .last-circle{
+        width: 86px !important;
+        height: 86px;
+        font-size: 13px;
+        padding-top: 0;
+    }   
+}
+
+@media screen and (max-width:768px) {
+    #portfolio .card{
+        margin-left: 10%;
+    }
+    #about .about-box .about-img img{
+        width: 156px !important;
+        height: 156px;
+    }
+    .last-circle{
+        width: 156px !important;
+        height: 156px;
+    }
+    #about .about-box.box-start .about-img{
+        position: static;
+    }
+    #about .about-box.box-end .about-img{
+        position: static;
+        z-index: 1;
+    }
+    #about .box::before{
+        left: 15%;
+        
+    }
+    #about .about-box{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:555px) {
+    #about .about-box .about-img img{
+        width: 136px !important;
+        height: 136px;
+    }
+    .last-circle{
+        width: 136px !important;
+        height: 136px;
+    }
+    #about .box::before{
+        height: 90%;   
+    }   
+}
+
+@media screen and (max-width:425px) {
+    #about .about-box .about-img img{
+        width: 86px !important;
+        height: 86px;
+    }
+    .last-circle{
+        width: 86px !important;
+        height: 86px;
+        padding-top: 7px;
+        font-size: 10px;
+    }
+    #about .box::before{
+        height: 95%;
+        left: 50px;
+        top: 2%;
+    }
+    #about .about-box{
+        align-items: flex-start !important;
+    }   
+}
